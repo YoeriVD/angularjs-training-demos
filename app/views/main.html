@@ -1,0 +1,97 @@
+<div class="header">
+    <ul class="nav nav-pills pull-right">
+        <li class="active"><a ng-href="#">Home</a></li>
+        <li><a ng-href="#">About</a></li>
+        <li><a ng-href="#">Contact</a></li>
+    </ul>
+    <h3 class="text-muted">EenCooleWebsite</h3>
+</div>
+
+<style>
+    input.ng-dirty.ng-invalid {
+        border: 2px solid red;
+    }
+
+    input.ng-dirty.ng-valid {
+        border: 2px solid green;
+    }
+</style>
+
+
+<!--<ul ng-repeat="getal in [1,2,3,4]">-->
+    <!--<demo>{{ getal }}</demo>-->
+<!--</ul>-->
+
+
+<div class="jumbotron">
+    <form name="newPersonForm" ng-submit="dumpPerson()" novalidate>
+        <input type="text" ng-model="newPerson">
+        <input type="submit"/>
+    </form>
+</div>
+
+
+<div class="jumbotron">
+
+    <p>hallo met Gertje</p>
+
+    <p>en met {{greeting}}</p>
+
+    <p>en ook nog met: </p>
+    <ul>
+        <li ng-repeat="person in otherPeople | filter: searchTerm">{{ person.name | lowercase }}</li>
+    </ul>
+
+    <input type="text" ng-model="searchTerm"/>
+
+    <p>
+        {{ searchTerm }}
+    </p>
+
+</div>
+<!--<div class="jumbotron">-->
+<!--<form novalidate ng-submit="dumpPerson()" name="newPersonForm">-->
+<!--<p>-->
+<!--<label for="email">email:</label>-->
+<!--<input type="text" name="email" ng-model="newPerson.email" ng-required="true"/>-->
+<!--<span ng-if="newPersonForm.email.$invalid && newPersonForm.email.$dirty">-->
+<!--dit veld is verplicht!-->
+<!--</span>-->
+<!--</p>-->
+
+<!--<p>-->
+<!--<label for="bestFriend">beste vriend:</label>-->
+<!--<select ng-options="person for person in otherPeople"-->
+<!--name="bestFriend"-->
+<!--ng-model="newPerson.bestFriend"></select>-->
+<!--</p>-->
+
+<!--<p>-->
+<!--<input type="checkbox" ng-model="newPerson.isOfAge">Ben je oud genoeg?</input>-->
+<!--</p>-->
+
+<!--<p>-->
+<!--<label>leeftijd:</label>-->
+<!--<input type="number" ng-model="newPerson.age" ng-required="newPerson.isOfAge"/>-->
+<!--</p>-->
+<!--<input type="submit" value="dump maar in de console!" ng-disabled="newPersonForm.$invalid"/>-->
+<!--</form>-->
+
+
+<!--</div>-->
+
+
+<!--<div class="jumbotron">-->
+<!--<p>Brood kost tegenwoordig : {{ broodPrijs | currency }}</p>-->
+
+<!--<p>Het is vandaag {{ datumVanVandaag | dateFormatted }}</p>-->
+<!--</div>-->
+
+
+<div class="row marketing">
+
+</div>
+
+<div class="footer">
+    <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+</div>

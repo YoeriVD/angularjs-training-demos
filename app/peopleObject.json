@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Yoeri", "age": 24, "location": "Temse"
+  },
+  {
+    "name": "Jonas", "age": 24, "location": "Aalst"
+  },
+  {
+    "name": "Erik", "age": 24, "location": "Nijlen"
+  },
+  {
+    "name": "Nele", "age": 24, "location": "Ergens tegen de Limburg"
+  },
+  {
+    "name": "Tom", "age": 24, "location": "Boechout"
+  },
+  {
+    "name": "Stanislav", "age": 24, "location": "scherpenheuvel"
+  },
+  {
+    "name": "Kevin", "age": 24, "location": "Merksem"
+  }
+]
